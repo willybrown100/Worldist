@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom"
 import {useState }from "react"
-import styles from "./Navbar.module.css"
+// import styles from "./Navbar.module.css"
+import styles from './NavBar.module.css'
 import Logo from "./Logo";
 import { FaBarsStaggered } from "react-icons/fa6";
 
