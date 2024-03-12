@@ -1,0 +1,9 @@
+.countryItem{
+ display: flex;
+ flex-direction: column;
+ background:var(--color-dark--2);
+ border-left: 3px solid var(--color-brand--2);
+ border-radius: 1rem;
+ padding: 1rem 1.5rem;
+ 
+}

@@ -1,0 +1,45 @@
+.section{
+  background: #242a2e;
+  height: calc( 100vh - 4rem);
+  display: grid;
+  place-items: center;
+}
+.input{
+ padding: 0.7rem;
+border-radius: 1rem;
+
+}
+.sectionCenter{
+  max-width: 600px;
+  margin: 0 auto;
+  width: 80vw;
+}
+.form {
+  background-color: var(--color-dark--2);
+  border-radius: 7px;
+  padding: 2rem ;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+
+  /* Different from other form */
+  width: 27rem;
+  margin: 0 auto;
+}
+@media screen and (min-width:600px) {
+  .form{
+    width: 30rem;
+  }
+}
+.inputContainer{
+ display: flex;
+ flex-direction: column;
+
+}
+.login{
+padding: 0.6rem;
+background: #00c46a;
+cursor: pointer;
+}

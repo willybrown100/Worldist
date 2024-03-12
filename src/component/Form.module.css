@@ -1,0 +1,56 @@
+.form{
+ background-color: var( --color-dark--2);
+ padding: 2rem;
+ border-radius: 1rem;
+ width: 100%;
+
+}
+.formRow{
+ display: flex;
+ flex-direction: column;
+ gap: 0.5rem;
+}
+.formRow label{
+ align-self: flex-start;
+ text-transform: capitalize;
+ font-weight: 600;
+}
+.formRow input{
+ padding: 0.5rem;
+ width: 100%;
+border-radius: 8px;
+ border: none;
+}
+.btnContainer{
+ display: flex;
+ justify-content: space-between;
+}
+.formRow textarea{
+height: 5rem;
+border-radius: 8px;
+margin-bottom: 1rem;
+}
+.btnContainer button{
+ cursor: pointer;
+ padding: 0.6rem;
+ border-radius: 7px;
+ background: var(--color-brand--2);
+ text-transform: capitalize;
+ font-weight: 600;
+
+}
+.inputContainer{
+ display: flex;
+ align-items: center;
+
+}
+.inputContainer input{
+ position: relative;
+}
+.inputContainer span{
+position: absolute;
+color: black;
+left: 73%;
+font-weight: 600;
+font-size: 1.4rem;
+}

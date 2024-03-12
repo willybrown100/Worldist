@@ -1,0 +1,14 @@
+.cityItem{
+list-style-type: none;
+ display: flex;
+flex-direction: column;
+gap: 2rem;
+overflow-y: scroll;
+height: 40vh;
+}
+.activeCity{
+ border: 3px solid var(--color-brand--2);
+}
+.cityItem::-webkit-scrollbar {
+  width: 0;
+}

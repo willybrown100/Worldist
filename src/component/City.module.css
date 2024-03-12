@@ -1,0 +1,22 @@
+.city{
+ background-color: var(--color-dark--2);
+ padding: 2rem 3rem;
+ border-radius: 1rem;
+}
+.row{
+ display: flex;
+ flex-direction: column;
+align-items: flex-start;
+}
+.row h4{
+color: var(--color-brand--2);
+}
+.row  a{
+ color: var(--color-brand--1);
+}
+.backBtn{
+ text-align: left;
+ cursor: pointer;
+ border: none;
+
+}

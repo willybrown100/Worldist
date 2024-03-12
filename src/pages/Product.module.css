@@ -1,0 +1,18 @@
+.section{
+background: #242a2e;
+}
+@media screen and (min-width:600px) {
+ .prodContainer {
+  display: grid;
+  grid-template-columns:1fr 1fr ;
+column-gap: 2rem;
+align-items: center;
+ }
+ .prodImg{
+  height: 29rem;
+  object-fit: cover;
+ }
+}
+.prodImg,.prodContent{
+margin-bottom: 2rem;
+}

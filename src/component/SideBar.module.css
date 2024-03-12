@@ -1,0 +1,50 @@
+
+  
+  .app{
+   background-color: var(--color-dark--1);
+   width: 100%;
+   text-align: center;
+   transform: translateX(-100%);
+   transition: all 1s linear;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+bottom: 0;
+padding: 0.2rem 3rem ;
+   display: grid;
+   place-items: center;
+   z-index: 3;
+  }
+
+@media screen and (min-width:600px) {
+ .app{
+   background-color: var(--color-dark--1);
+   position:relative;
+     transform: translateX(0);
+     height: calc(100vh - 4.7rem) ;
+      
+ }
+ .sideBtn{
+  display: none;
+ }
+}
+.showBar{
+ transform: translate(0);
+}
+@media screen and (min-width:600px) {
+ .app{
+  width: 50%;
+ }
+}
+.sideBtn{
+ position: fixed;
+ top:5rem;
+ left: 3rem;
+ font-size: 2rem;
+z-index: 4;
+background: none;
+border: none;
+cursor: pointer;
+color:   var(  --color-brand--2)
+}
