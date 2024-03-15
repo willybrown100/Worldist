@@ -11,13 +11,14 @@
    left: 0;
    right: 0;
 bottom: 0;
-padding: 0.2rem 3rem ;
+padding: 3rem 1.5rem ;
    display: grid;
+   /* grid-template-columns: auto 1fr auto auto; */
    place-items: center;
    z-index: 3;
   }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:800px) {
  .app{
    background-color: var(--color-dark--1);
    position:relative;
@@ -32,14 +33,14 @@ padding: 0.2rem 3rem ;
 .showBar{
  transform: translate(0);
 }
-@media screen and (min-width:600px) {
+@media screen and (min-width:800px) {
  .app{
   width: 50%;
  }
 }
 .sideBtn{
  position: fixed;
- top:5rem;
+ top:5.5rem;
  left: 3rem;
  font-size: 2rem;
 z-index: 4;
@@ -47,4 +48,19 @@ background: none;
 border: none;
 cursor: pointer;
 color:   var(  --color-brand--2)
+}
+@media screen and (min-width:600px) {
+  
+  .sideFooter{
+   margin-top: 2rem;
+  }
+}
+/* .copyRight{
+ position: absolute;
+ top: 0;
+ right: 0;
+ left: 0;
+} */
+.close{
+  font-size: 3rem;
 }

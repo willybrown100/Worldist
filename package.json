@@ -11,6 +11,7 @@
     "server": "json-server --watch data/cities.json --port 600"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.39.8",
     "eslint-config-react-app": "^7.0.1",
     "json-server": "^1.0.0-alpha.21",
     "leaflet": "^1.9.4",

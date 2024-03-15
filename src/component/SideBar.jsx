@@ -8,19 +8,16 @@ const {isOpen,setIsOpen}=useCity()
  return (
    <>
      <button className={styles.sideBtn} onClick={() => setIsOpen(!isOpen)}>
-       {isOpen ? <p>❌</p> : <i className="fas fa-bars"></i>}
+       {isOpen ? <p className={styles.close}>&times;</p> : <i className="fas fa-bars"></i>}
      </button>
      <div className={`${styles.app} ${isOpen ? styles.showBar : ""}`}>
-       <Link to="/">
-         <Logo />
-       </Link>
        <AppNav />
        <Outlet />
-       <footer className={styles.sidebar}>
-         <p className={styles.copyright}>
+       {/* <footer className={styles.sideFooter}>
+         <p className={styles.copyRight}>
            &copy; copyright {new Date().getFullYear()} by Worldist inc.
          </p>
-       </footer>
+       </footer> */}
      </div>
    </>
  );

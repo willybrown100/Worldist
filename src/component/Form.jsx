@@ -29,9 +29,8 @@ const [geoCodingError,setGeoCodingError]=useState("")
 const [isGeoLoading,setIsGeoLoading]=useState(false)
 const [emoji,setEmoji]=useState("")
   const { lat, lng } = useUrlPosition();
-const { createCities}=useCity()
+const { createCities, isLoading, setIsLoading } = useCity();
 const navigate = useNavigate()
-
   const urlReverse = "https://api.bigdatacloud.net/data/reverse-geocode-client"
 
   useEffect(()=>{
@@ -64,8 +63,9 @@ const handleClick = async function (e) {
   };
 
 await createCities(newCity);
-
-  navigate("/app/cities")
+setIsLoading(true)
+navigate("/app/cities")
+setIsLoading(false)
 };
 if(isGeoLoading) return <Spinner/>
   if(geoCodingError)return <Message message={geoCodingError}/>
@@ -97,7 +97,7 @@ if(isGeoLoading) return <Spinner/>
      </div>
 
      <div className={styles.btnContainer}>
-       <button >add</button>
+       <button disabled={isLoading}>{isLoading&&<Spinner/>}add</button>
        <BackButton />
      </div>
 

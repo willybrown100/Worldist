@@ -5,14 +5,14 @@ import { useCity } from '../../context/CityProvider';
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
     day: "numeric",
-    month: "long",
+    month: "short",
     year: "numeric",
-    weekday: "long",
+    weekday: "short",
   }).format(new Date(date));
 
 
 function CityItem({city}) {
-  const {currentCity,deleteCities}=useCity()
+  const {currentCity,deleteCities,}=useCity()
   const {isOpen,setIsOpen}=useCity()
   // console.log(currentCity.id,city.id)
 const handleClick=function(e){
@@ -20,7 +20,7 @@ const handleClick=function(e){
   deleteCities(city.id)
 }
  return (
-   <li onClick={()=>setIsOpen(!isOpen)}>
+   <li>
      <Link
        className={`${styles.cityItem} ${city.id=== currentCity.id ? styles.activeCity : ""
        }`}

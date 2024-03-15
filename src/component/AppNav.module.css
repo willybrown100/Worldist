@@ -1,8 +1,12 @@
 .nav {
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
 }
-
+@media screen and (min-width:600px) {
+  .nav {
+    /* margin-bottom: 2rem; */
+  }
+}
 .nav ul {
   list-style: none;
   display: flex;

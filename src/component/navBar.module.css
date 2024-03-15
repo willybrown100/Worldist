@@ -54,7 +54,7 @@ ul{
   margin: 0 auto;
   width: 90vw;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .navCenter {
     display: flex;
     justify-content: space-between;
@@ -82,7 +82,7 @@ ul{
   width: 100%;
   background-color: #fff;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   /* .menu {
     display: flex;
   } */

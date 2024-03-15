@@ -23,7 +23,7 @@ const {fetchCities,currentCity}=useCity()
    <div className={styles.city}>
      <div className={styles.row}>
        <h4>City name</h4>
-       <h3>
+       <h3 className={styles.cityName}>
          <span>{currentCity.emoji}</span> {currentCity.cityName}
        </h3>
      </div>

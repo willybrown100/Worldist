@@ -25,7 +25,7 @@ login(email,password)
    <section className={styles.section}>
      <form className={`${styles.form}`} onSubmit={handleSubmit}>
        <div className={styles.inputContainer}>
-         <label htmlFor="email">email</label>
+         <label htmlFor="email" >Email</label>
          <input
            type="email"
            id="email"

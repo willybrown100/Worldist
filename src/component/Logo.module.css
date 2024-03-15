@@ -2,3 +2,12 @@
  height: 3rem;
 
 }
+.logoContainer{
+ display: flex;
+ align-items: center;
+}
+.logoContainer h2{
+ margin-bottom: 0;
+ text-shadow: 2px 6px 8px black;
+ font-size: 1.7rem;
+}
